@@ -4,7 +4,7 @@ Kubernetes Cluster specific Helm configuration.
 
 ## setup
 
-Clone custom [helm charts repo](https://github.com/bkendinibilir/helm-charts).
+Clone custom [helm charts repo](https://github.com/seibert-media/helm-charts).
 
 Fill in your kubernetes context name in [captain.cfg](captain.cfg) and set path to the local helm charts repo.
 
