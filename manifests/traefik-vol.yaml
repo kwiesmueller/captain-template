@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+    name: traefik-acme
+    labels:
+        app: traefik
+        volume: traefik-acme
+spec:
+    capacity:
+        storage: 1Mi
+    accessModes:
+        - ReadWriteOnce
+    persistentVolumeReclaimPolicy: Retain
+    hostPath:
+        path: /volumes/traefik

@@ -1,0 +1,18 @@
+chart: local/traefik
+imageTag: v1.2.2
+serviceType: ClusterIP
+hostPort: true
+ssl:
+  enabled: true
+  enforced: true
+acme:
+  enabled: true
+  staging: false
+  email: admin@example.com
+  persistence:
+    size: 1Mi
+dashboard:
+  enabled: true
+  domain: traefik.example.com
+gzip:
+  enabled: false
